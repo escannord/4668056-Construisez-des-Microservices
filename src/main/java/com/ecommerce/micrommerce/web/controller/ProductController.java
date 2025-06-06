@@ -79,4 +79,10 @@ public class ProductController {
         return marges;
     }
 
+    @GetMapping("/TriProduits")
+    public List<Product> trierProduitsParOrdreAlphabetique(){
+        return productDao.findAllByOrderByNom();
+    }
+
+
 }
