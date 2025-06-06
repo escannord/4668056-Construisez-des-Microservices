@@ -69,4 +69,8 @@ public class Product {
                 ", prix=" + prix +
                 '}';
     }
+
+    public int calculerMarge(){
+        return prix - prixAchat;
+    }
 }
